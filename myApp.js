@@ -63,7 +63,7 @@ const findEditThenSave = (personId, done) => {
       if (err) {
         done(err);
       }
-      done(null, data);
+      return done(null, data);
     });
   });
 };
